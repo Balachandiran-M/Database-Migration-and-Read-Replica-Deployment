@@ -1,10 +1,10 @@
 Commands that which i used to create databse in ec2.
 sudo su -
+yum -y update
 dnf update 
 dnf install mariadb105-server ( I used dnf package to install mariadb)
 systemctl enable mariadb
 systemctl start mariadb
-yum -y update
 
 ***************
 INSTALLATION  :
@@ -21,7 +21,7 @@ FLUSH PRIVILEGES;
 ***************
 FOR MIGRATING INTO RDS:
 mysqldump -u root -p ec2sql(dbname) > ec2sql.sql         (this line which is used to create a database into file)
-mysql -h <your-endpoint> -P 3306 -u username -p database-name < ec2db.sql
+mysql -h <your-endpoint> -P 3306 -u username -p database-name < ec2db.sql         (enter your username and password ,rds endpoint)
 mysql -h <your-endpoint> -P 3306 -u username -p
 USE database-name;
 SELECT * FROM table-name;
