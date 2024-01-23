@@ -1,0 +1,21 @@
+Commands that which i used to create databse in ec2.
+sudo su -
+dnf update 
+dnf install mariadb105-server ( I used dnf package to install mariadb)
+systemctl enable mariadb
+systemctl start mariadb
+yum -y update
+
+***************
+INSTALLATION  :
+sudo  mysql_secure_installation
+
+***************
+CONNECTION AND CREATING A USER:
+mysql -u root -p    (Password which you created during your installation)
+CREATE DATABASE your_database_name;
+CREATE USER 'your_username'@'localhost' IDENTIFIED BY 'your_password';      ( you can enter your own username and password)
+GRANT ALL PRIVILEGES ON your_database_name.* TO 'your_username'@'localhost';
+FLUSH PRIVILEGES;
+
+***************
