@@ -19,3 +19,9 @@ GRANT ALL PRIVILEGES ON your_database_name.* TO 'your_username'@'localhost';
 FLUSH PRIVILEGES;
 
 ***************
+FOR MIGRATING INTO RDS:
+mysqldump -u root -p ec2sql(dbname) > ec2sql.sql         (this line which is used to create a database into file)
+mysql -h <your-endpoint> -P 3306 -u username -p database-name < ec2db.sql
+mysql -h <your-endpoint> -P 3306 -u username -p
+USE database-name;
+SELECT * FROM table-name;
