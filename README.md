@@ -15,6 +15,8 @@
 ![Screenshot (159)](https://github.com/Balachandiran-M/Database-Migration-and-Read-Replica-Deployment/assets/152047725/b687b787-02c7-41f9-88af-bc1f67ff3c56)
 
 <h2 style="font-size: 24px;">4) AND create a read replica for the rds database for high availability. I created a read replicas in different availabilty zone in same region.</h2>
+
+
 ![Screenshot (162)](https://github.com/Balachandiran-M/Database-Migration-and-Read-Replica-Deployment/assets/152047725/8e2cd432-c898-4de5-977e-cc9ec1aa937a)
 ![Screenshot (163)](https://github.com/Balachandiran-M/Database-Migration-and-Read-Replica-Deployment/assets/152047725/cf2702d0-8528-4a4c-bf33-2cabf2d2a9b3)
 ![Screenshot (164)](https://github.com/Balachandiran-M/Database-Migration-and-Read-Replica-Deployment/assets/152047725/d8c56b5c-8eb9-4257-bb02-3cab59531cd4)
